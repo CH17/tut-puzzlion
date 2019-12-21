@@ -1,5 +1,4 @@
 <?php
 
-Route::get('/', function () {
-    return view('home');
-});
+
+Route::get('/{any}', 'SinglePageController@index')->where('any', '.*');
